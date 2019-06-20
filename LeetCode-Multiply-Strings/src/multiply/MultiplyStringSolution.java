@@ -9,12 +9,21 @@ public class MultiplyStringSolution {
 		
 		for(int i = a - 1; i >= 0; i--){
 			for(int j = b - 1; j >= 0; j--){
+				
 				int multiply = (num1.charAt(i) - '0') * (num2.charAt(j) - '0');
+				
 				int p1 = i + j, p2 = i + j + 1;
+				
+//				System.out.println(multiply);
+//				System.out.println(position[p2]);
+				
 				int sum = multiply + position[p2];
 				
 				position[p1] += sum / 10;
+//				System.out.println(position[p1]);
+				
 				position[p2] = sum % 10;
+//				System.out.println(position[p2]);
 			}
 		}
 		
