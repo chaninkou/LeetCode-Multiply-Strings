@@ -1,4 +1,4 @@
-package multiply;
+package leetcode43;
 
 public class MultiplyStringSolution {
 	public String multiply(String num1, String num2){
