@@ -10,6 +10,7 @@ public class MultiplyStringSolution {
 		// From right to left 
 		for(int i = a - 1; i >= 0; i--){
 			for(int j = b - 1; j >= 0; j--){
+				// Get integer
 				int multiply = (num1.charAt(i) - '0') * (num2.charAt(j) - '0');
 				
 				// The index positions to store 
